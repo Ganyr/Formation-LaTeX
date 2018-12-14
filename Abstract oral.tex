@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+
+%PACKAGE
+\usepackage{packages/packages}
+
+%DOCUMENT
+\author{T.G.$^{1,2}$, M.M.$^3$, D.B.$^1$, C.B.$^2$, J-M.C.$^1$, C.H.$^2$, S.M.$^2$}
+\title{\textbf{Microwave Sintering of 3D Printed Cone-Shape Ceramics: Experiment and Simulation Synergy}}
+\date{\textit{\begin{scriptsize}
+$^1$Univ. Grenoble Alpes, CNRS, Grenoble INP, SIMAP, 38000 GRENOBLE\\
+$^2$Normandie Univ, CNRS, ENSICAEN, Lab CRISMAT, UMR 6508, 6 Blvd Marechal Juin, F-14050 Caen\\
+$^3$Univ. Lyon, INSA-LYON, MATEIS, UMR CNRS 5510, F69621 Villeurbanne, France
+\end{scriptsize}}}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Objectives}	
+\end{center}
+
+This paper aims at better understanding and controlling microwave sintering of complex-shape zirconia parts by coupling experiments and numerical simulations.
+
+\begin{center}
+\item \section*{Materials \& Methods}
+\end{center}
+
+Cone-shape ceramics were printed by the process called Robocasting: a ceramic paste is extruded from a nozzle which is moved across a platform.
+
+Hollow cones with various wall thicknesses, tip angles and heights have been printed from nano-sized yttrium-doped zirconia powder loaded paste. After printing, cones were dried and then submitted to a thermal cycle in order to debind and pre-sinter them, in a conventional furnace.
+
+Sintering was finally performed up to 1500$^\circ$C in a 2.45 GHz microwave single-mode furnace. The temperature regulation was ensured by controlling the cavity length. Two heating methods were tested: direct microwave heating and susceptor-assisted heating. The temperature was measured with a thermal camera.
+
+The cones were characterized by X-ray microtomography at each processing step (dried, pre-sintered and sintered) with a 6 $\mu m$ voxel size. The microstructure of the sintered ceramics was observed by SEM.
+
+Finite element simulation of microwave sintering, including electromagnetic and thermal coupling, was carried out with COMSOL Multiphysics$^{\mbox{\scriptsize{\textregistered}}}$ 5.3 software.
+
+\begin{center}
+\item \section*{Results}
+\end{center}
+
+When the cones were simply laid on their base at the bottom of the insulating box, plasma was observed in the cavity at high temperature. Numerical simulation suggested that this plasma resulted from electrical field gradients in the cavity, especially around the cone tip, due to both this geometrical singularity and zirconia dielectric properties.
+
+In the other hand, when cones were sintered upside-down with the tip drilled into a refractory brick, sintering occurred without any plasma formation. The simulation showed that the support played an electromagnetic buffer role due to its intermediate dielectric properties compared to zirconia and air. However, the geometrical and dielectric ceramic features make heating heterogeneous.
+
+A silicon carbide (SiC) susceptor, partly surrounding the cone, has also been used. This resulted in an hybrid heating with more homogeneous electric field and temperature distributions.
+
+\begin{center}
+\item \section*{Conclusion}
+\end{center}
+
+Coupling experimental data and numerical simulations allowed a better understanding of complex-shape sample microwave heating. 
+
+Even if it has been possible to complete a direct heating experiment, the use of a SiC susceptor has been favored in order to have a homogeneous heating.
+	
+\end{document}
